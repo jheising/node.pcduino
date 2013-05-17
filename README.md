@@ -8,7 +8,7 @@ From the command line:
 
     $ npm install pcduino
 
-Or in your package.json file
+Or in your package.json file:
 
 	{
     	"dependencies" : {

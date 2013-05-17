@@ -4,9 +4,19 @@ A node.js module for accessing the Arduino compatible pins on the pcDuino microc
 
 ## Installation
 
+From the command line:
+
     $ npm install pcduino
 
-## A Digital Example
+Or in your package.json file
+
+	{
+    	"dependencies" : {
+    		"pcduino" : "*",
+    	}
+    }
+
+## A digital example
 
 ```js
 var pcduino = require("pcduino");
@@ -40,7 +50,7 @@ state = digital.digitalRead(10);
 console.log("The value of pin #10 is now " + (state == digital.HIGH ? "HIGH" : "LOW"));
 ```
 
-## An Analog Example
+## An analog example
 
 ```js
 var pcduino = require("pcduino");

@@ -2,6 +2,8 @@
 
 A node.js module for accessing the Arduino compatible pins on the pcDuino microcontroller. It tries to maintain as close a match as possible to the original Arduino C++ functions.
 
+**NOTE: Analog functions aren't working right now, pending a new rewrite as the pcDuino OS has been updated**
+
 ## Installation
 
 From the command line:

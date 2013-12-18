@@ -2,8 +2,6 @@
 
 A node.js module for accessing the Arduino compatible pins on the pcDuino microcontroller. It tries to maintain as close a match as possible to the original Arduino C++ functions.
 
-**NOTE: Analog functions aren't working right now, pending a new rewrite as the pcDuino OS has been updated**
-
 ## Installation
 
 From the command line:
@@ -58,8 +56,6 @@ console.log("The value of pin #10 is now " + (state == digital.HIGH ? "HIGH" : "
 var pcduino = require("pcduino");
 var analog = pcduino.analog;
 
-// analog.simulate(true); - Can be used for testing purposes when you're not running on a pcDuino. This will read and write to dummy files.
-
 console.log("There are " + analog.PIN_COUNT + " analog pins on the pcDuino.");
 
 // Note that the only valid pins for analog output are 3, 5, 6, 9, 10, and 11. These are PWM (digital) pins on the pcDuino and not to be confused with the analog input pins. Any other pin specified will throw an error.
@@ -68,7 +64,7 @@ console.log("The maximum number that can be written to analog pin #5 is " + maxV
 
 analog.analogWrite(5, maxValue);            // Turn our pin fully up
 
-// Note this is not the same as the analog write pin #5! This maps to the analog input pins on the pcDuino.
+// Note this is not the same as the analog write pin #5! This maps to the analog input pins on the pcDuino. Valid pins are 0, 1, 2, 3, 4, 5.
 var readValue = analog.analogRead(5);
 console.log("The analog value of pin #5 is " + readValue + ". Note this is not the same as the analog write pin #5!");
 ```

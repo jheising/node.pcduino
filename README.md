@@ -22,7 +22,9 @@ You can replace the version to install later versions (0.10.24 was the latest as
 
 From the command line:
 
-    npm install pcduino
+    npm install pcduino --save
+    
+Adding the --save switch will automatically add it to your package.json file.
 
 Or in your package.json file:
 

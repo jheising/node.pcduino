@@ -18,11 +18,11 @@ sudo cp -R * /usr/local
 
 You can replace the version to install later versions (0.10.24 was the latest as of this writing), but it does appear that the Raspberry Pi binaries tend to lag behind the latest version on the Node.js website by a couple versions.
 
-## Installing NPM Package
+## Installing the Node Package
 
 From the command line:
 
-    $ npm install pcduino
+    npm install pcduino
 
 Or in your package.json file:
 

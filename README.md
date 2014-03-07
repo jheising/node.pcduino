@@ -2,7 +2,23 @@
 
 A node.js module for accessing the Arduino compatible pins on the pcDuino microcontroller. It tries to maintain as close a match as possible to the original Arduino C++ functions.
 
-## Installation
+## Installing Node.js on the pcDuino
+
+It turns out the easiest way to install the latest version of node.js on the pcDuino is to use the precompiled binaries for the Raspberry Pi as provided by the folks at nodejs.org. Here's how to install it on the pcDuino from the command line:
+
+```
+wget http://nodejs.org/dist/v0.10.24/node-v0.10.24-linux-arm-pi.tar.gz
+
+tar xvzf node-v0.10.24-linux-arm-pi.tar.gz
+
+cd node-v0.10.24-linux-arm-pi
+
+sudo cp -R * /usr/local
+```
+
+You can replace the version to install later versions (0.10.24 was the latest as of this writing), but it does appear that the Raspberry Pi binaries tend to lag behind the latest version on the Node.js website by a couple versions.
+
+## Installing NPM Package
 
 From the command line:
 

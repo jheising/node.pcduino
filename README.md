@@ -13,6 +13,9 @@ tar xvzf node-v0.10.24-linux-arm-pi.tar.gz
 
 cd node-v0.10.24-linux-arm-pi
 
+# Remove some extra files that we don't need
+rm ChangeLog LICENSE README.md
+
 sudo cp -R * /usr/local
 ```
 

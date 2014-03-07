@@ -26,14 +26,6 @@ From the command line:
     
 Adding the --save switch will automatically add it to your package.json file.
 
-Or in your package.json file:
-
-	{
-    	"dependencies" : {
-    		"pcduino" : "*",
-    	}
-    }
-
 ## A digital example
 
 ```js
